@@ -11,7 +11,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xJn-Pq-Laz">
             <objects>
-                <navigationController id="geg-uI-hXE" sceneMemberID="viewController">
+                <navigationController id="geg-uI-hXE" customClass="NavigationController" customModule="UITester" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J3r-2q-ldN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

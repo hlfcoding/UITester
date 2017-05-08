@@ -37,9 +37,8 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView,
                                  didSelectItemAt indexPath: IndexPath) {
-        let viewController = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(withIdentifier: "CollectionViewController")
-        navigationController?.pushViewController(viewController, animated: true)
+        let cell = collectionView.cellForItem(at: indexPath)
+        UIApplication.shared.sendAction(Selector(("showCollection:")), to: nil, from: cell, for: nil)
     }
 
 }
