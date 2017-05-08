@@ -14,6 +14,7 @@
 		E302499F1BD0EE6D00694F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E302499D1BD0EE6D00694F83 /* LaunchScreen.storyboard */; };
 		E30249AA1BD0EE6E00694F83 /* UITesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30249A91BD0EE6E00694F83 /* UITesterUITests.swift */; };
 		E3125DA01EBFF2D20040A311 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3125D9F1EBFF2D20040A311 /* NavigationController.swift */; };
+		E3125DA21EBFF4820040A311 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3125DA11EBFF4820040A311 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E30249A91BD0EE6E00694F83 /* UITesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITesterUITests.swift; sourceTree = "<group>"; };
 		E30249AB1BD0EE6E00694F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3125D9F1EBFF2D20040A311 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E3125DA11EBFF4820040A311 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E30249941BD0EE6D00694F83 /* AppDelegate.swift */,
 				E30249961BD0EE6D00694F83 /* CollectionViewController.swift */,
 				E3125D9F1EBFF2D20040A311 /* NavigationController.swift */,
+				E3125DA11EBFF4820040A311 /* TabBarController.swift */,
 				E30249981BD0EE6D00694F83 /* Main.storyboard */,
 				E302499B1BD0EE6D00694F83 /* Assets.xcassets */,
 				E302499D1BD0EE6D00694F83 /* LaunchScreen.storyboard */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3125DA01EBFF2D20040A311 /* NavigationController.swift in Sources */,
+				E3125DA21EBFF4820040A311 /* TabBarController.swift in Sources */,
 				E30249971BD0EE6D00694F83 /* CollectionViewController.swift in Sources */,
 				E30249951BD0EE6D00694F83 /* AppDelegate.swift in Sources */,
 			);
