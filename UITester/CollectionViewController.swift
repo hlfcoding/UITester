@@ -11,9 +11,15 @@ class CollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let navigationController = navigationController {
-            navigationItem.title = navigationItem.title?
-                .appending(": L\(String(describing: navigationController.viewControllers.count))")
+        let navigationController = self.navigationController!
+        navigationItem.title = navigationItem.title?
+            .appending(": L\(String(describing: navigationController.viewControllers.count))")
+        if let _ = presentingViewController, self == navigationController.viewControllers.first {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(
+                barButtonSystemItem: .stop, target: nil, action: Selector(("dismissCollection:")))
+        } else {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(
+                barButtonSystemItem: .action, target: nil, action: Selector(("showCollection:")))
         }
         collectionView?.reloadData()
     }
