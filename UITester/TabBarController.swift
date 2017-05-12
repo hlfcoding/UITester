@@ -18,14 +18,13 @@ class TabBarController: UITabBarController {
     }
 
     @objc private func dismissCollection(_ sender: Any?) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true)
     }
 
     @objc private func showCollection(_ sender: Any?) {
         let viewController = UIStoryboard(name: "Main", bundle: nil)
             .instantiateViewController(withIdentifier: "CollectionViewController")
-        present(NavigationController(rootViewController: viewController),
-                animated: true, completion: nil)
+        present(NavigationController(rootViewController: viewController), animated: true)
     }
 
 }

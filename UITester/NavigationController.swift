@@ -20,7 +20,7 @@ class NavigationController: UINavigationController {
     }
 
     @objc private func dismissCollection(_ sender: Any?) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true)
     }
 
     @objc private func showCollection(_ sender: Any?) {
@@ -30,8 +30,7 @@ class NavigationController: UINavigationController {
             pushViewController(viewController, animated: true)
         } else {
             assert(presentingViewController != nil)
-            present(NavigationController(rootViewController: viewController),
-                    animated: true, completion: nil)
+            present(NavigationController(rootViewController: viewController), animated: true)
         }
     }
 
