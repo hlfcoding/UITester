@@ -34,7 +34,7 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return navigationController?.viewControllers.count ?? 0
     }
 
     override func collectionView(_ collectionView: UICollectionView,
